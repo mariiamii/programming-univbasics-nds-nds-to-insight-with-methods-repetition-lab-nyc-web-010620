@@ -25,7 +25,14 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-  # Write this implementation
+  names = []        # make a names array
+  i = 0 
+  
+  while i<source.length do
+    names[i] = source[i][:name]     # loop through the hash to find the names and add it to the names array
+    i += 1
+  end
+  names
 end
 
 def total_gross(source)
